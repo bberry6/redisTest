@@ -1,0 +1,17 @@
+{
+  "name": "redis_test",
+  "version": "1.0.0",
+  "description": "Tests redis config for pubsub output buffer soft car",
+  "main": "publisher.js",
+  "dependencies": {
+    "redis": "^2.7.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "npm run subscriber && npm run publisher",
+    "subscriber": "node subscriber.js",
+    "publisher":"node publisher.js 20b"
+  },
+  "author": "Brett Berry <byb810@gmail.com>",
+  "license": "MIT"
+}
